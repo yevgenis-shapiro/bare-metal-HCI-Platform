@@ -1,22 +1,26 @@
 <img width="2048" height="3044" alt="image" src="https://github.com/user-attachments/assets/0ea882ab-6492-471e-aa67-267567aaecf2" />
 
 ## Harvester Virtualization | Platform
-Trino (formerly known as PrestoSQL) is an open-source, distributed SQL query engine designed for running fast, interactive analytics on large datasets across multiple data sources.
+Harvester is an open-source hyperconverged infrastructure (HCI) solution developed by SUSE (formerly by Rancher Labs). It provides virtualization and Kubernetes integration on bare-metal servers, designed to be an alternative to proprietary virtualization stacks like VMware vSphere, Proxmox, or Nutanix, but built entirely with open-source technologies.
 
 
 #### 🧩 Key Features: :
-   - **Query federation**: Combine data from multiple sources (e.g., join S3 and PostgreSQL tables).
-   - **High performance**: In-memory distributed query execution.
-   - **ANSI SQL compatible**: React UI for search, lineage visualization, and dataset exploration.
-   - **Scales horizontally**: Add more worker nodes to handle larger queries.
-   - **Connectors**: AWS S3, GCS, HDFS , Hive, Iceberg, Delta Lake , MySQL, PostgreSQL, MongoDB , Kafka, Elasticsearch
+   - **Virtualization on Kubernetes**: Create, manage, and migrate VMs natively inside Kubernetes.
+   - **Integrated Storage**: Built-in distributed block storage with snapshot and backup support.
+   - **Networking**: Multiple NICs per VM via Multus CNI.VLAN support and external network attachment definitions.
+   - **Cluster Management**: Add or remove nodes easily.Supports HA control plane and live migration.
+   - **Rancher Integration**: Manage Harvester and RKE2/K3s clusters under the same Rancher interface.
+   - **VM Templates**: Predefine hardware and network configurations for consistent deployment.
 
 
 🧠 Architecture Overview:
 ```
-🧱 Coordinator Node – Parses queries, plans execution, and schedules work.
-🧱 Worker Nodes – Execute query tasks and process data.
-🧱 Catalogs & Connectors – Define how Trino connects to external systems.
+🧱 Kubernetes
+🧱 KubeVirt
+🧱 Longhorn
+🧱 Harvester Controller
+🧱 MetalLB + Multus
+🧱 Rancher Integration
 ```
      
 
