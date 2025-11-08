@@ -9,5 +9,8 @@ terraform {
 }
 
 provider "harvester" {
-  kubeconfig = "~/.kube/config"  # Or path to your kubeconfig with Harvester context
+  endpoint  = "https://<harvester-api-endpoint>:443"
+  username  = "admin"
+  password  = "uqMOYGSQkemwI9lN"
+  insecure  = true
 }
