@@ -29,8 +29,8 @@ Harvester is an open-source hyperconverged infrastructure (HCI) solution develop
 ```
 terraform init
 terraform validate
-terraform plan -var-file="template.tfvars"
-terraform apply -var-file="template.tfvars" -auto-approve
+terraform plan
+terraform apply -auto-approve
 ```
 
 
