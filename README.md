@@ -7,13 +7,15 @@ Harvester is an open-source hyperconverged infrastructure (HCI) solution develop
 Hyperconverged infrastructure (HCI) is
 an IT framework that combines compute, storage, networking, and virtualization into a single, software-defined system that runs on commodity hardware. This model simplifies data center management by consolidating traditionally separate components into a single platform managed by a unified software interface, leading to lower costs, greater agility, and easier scalability. HCI pools resources, making them easy to allocate to virtual machines as needed
 
-#### 🧩 Key Features: :
+#### 🚀 Key Features: :
    - **Virtualization on Kubernetes**: Create, manage, and migrate VMs natively inside Kubernetes.
    - **Integrated Storage**: Built-in distributed block storage with snapshot and backup support.
    - **Networking**: Multiple NICs per VM via Multus CNI.VLAN support and external network attachment definitions.
    - **Cluster Management**: Add or remove nodes easily.Supports HA control plane and live migration.
    - **Rancher Integration**: Manage Harvester and RKE2/K3s clusters under the same Rancher interface.
    - **VM Templates**: Predefine hardware and network configurations for consistent deployment.
+   - **Terraform**: Support for infrastructure-as-code.
+
 
 
 🧠 Architecture Overview:
@@ -25,9 +27,10 @@ an IT framework that combines compute, storage, networking, and virtualization i
 🧱 MetalLB + Multus
 🧱 Rancher Integration
 ```
+
      
 
-🚀 Deployment Options
+⚙️ Deployment Options
 ```
 terraform init
 terraform validate
