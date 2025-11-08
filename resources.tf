@@ -27,7 +27,7 @@ resource "harvester_virtualmachine" "vm1" {
   run_strategy = "RerunOnFailure"
 
   cpu    = 2
-  memory = "4Gi"
+  memory = "2Gi"
 
   hostname = "vm1"
   ssh_keys = [harvester_ssh_key.example.name]
